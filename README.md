@@ -33,6 +33,10 @@ python prepare.py
 ```
 Now, you should see a folder named "Market1501/pytorch" including all the processed dataset for tracking model training and testing.
 
+# Weights
+
+The weights for tracking and detection model are already included in these repository. However, feel free to train new weights for better detection result and download other [YOLOV7 weights](https://github.com/ultralytics/yolov5).
+
 # Run and Test
 There is a demo video filed named "video.mp4" in the main folder. You can run main.py file to test tracking result on this video. The result will be stored under output folder.
 ```

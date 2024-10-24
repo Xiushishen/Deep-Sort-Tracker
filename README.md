@@ -7,11 +7,11 @@ This repository contains the code for a deep-learning based multi-object tracker
 # Dataset
 
 Get the codes from github account:
-'''
+```
 git@github.com:Xiushishen/Deep-Sort-Tracker.git
-'''
+```
 
 Run bash script to download Market1501 dataset:
-'''
+```
 bash ./data_getter.sh
-'''
+```

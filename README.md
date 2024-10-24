@@ -22,7 +22,6 @@ python3 -m pip install --no-cache $TORCH_INSTALL
 pip install -r requirements.txt
 ```
 
-
 # Dataset
 
 You can use the following commands to download the codes and prepare Market1501 dataset.
@@ -33,3 +32,16 @@ cd deep_sort/deep
 python prepare.py
 ```
 Now, you should see a folder named "Market1501/pytorch" including all the processed dataset for tracking model training and testing.
+
+# Run and Test
+There is a demo video filed named "video.mp4" in the main folder. You can run main.py file to test tracking result on this video. The result will be stored under output folder.
+```
+# on video file
+python main.py --input_path [VIDEO_FILE_NAME]
+
+example: python main.py --input_path video.mp4
+
+# on webcam 
+python main.py --cam 0 --display
+
+```

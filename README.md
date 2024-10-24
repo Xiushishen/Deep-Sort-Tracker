@@ -6,12 +6,11 @@ This repository contains the code for a deep-learning based multi-object tracker
 
 # Dataset
 
-Get the codes from github account:
+You can use the following commands to download the codes and prepare Market1501 dataset.
 ```
 git@github.com:Xiushishen/Deep-Sort-Tracker.git
-```
-
-Run bash script to download Market1501 dataset:
-```
 bash ./data_getter.sh
+cd deep_sort/deep
+python prepare.py
 ```
+Now, you should see a folder named "Market1501/pytorch" including all the processed dataset for tracking model training and testing.

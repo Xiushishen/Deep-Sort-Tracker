@@ -5,13 +5,16 @@ This repository contains the code for a deep-learning based multi-object tracker
 # Dependency
 1 Create a virtual environment with Python >=3.8  
 ```
-conda create -n py38 python=3.8    
-conda activate py38   
+conda create -n sort python=3.8    
+conda activate dsort  
 ```
 
-2 Install pytorch >= 1.6.0, torchvision >= 0.7.0.
+2 Install pytorch = 2.1.0 to be suitable on Jetson Orin.
 ```
-conda install pytorch torchvision cudatoolkit=10.1 -c pytorch
+export TORCH_INSTALL=https://developer.download.nvidia.cn/compute/redist/jp/v512/pytorch/torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl
+python3 -m pip install --upgrade pip;
+python3 -m pip install numpy==1.19.5
+python3 -m pip install --no-cache $TORCH_INSTALL
 ```
 
 3 Install all dependencies
